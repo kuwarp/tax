@@ -1,19 +1,13 @@
-import React from 'react'
-import logo from './logo.svg';
-import './css/props.css'
-import './css/App.css';
+import React from 'react';
+import AppRoot from "./AppRoot";
+import AppLoader from "./AppLoader";
 
-// Screens
-
-import Header from "./screens/header";
-import sidebar from "./screens/sidebar"
-
-function App() {
-  return (
-    <div className="App flex">
-       <Sidebar />      
-    </div>
-  );
+function App(){
+  return(
+    <AppRoot>
+      <AppLoader />
+    </AppRoot>
+  )
 }
 
 export default App;
